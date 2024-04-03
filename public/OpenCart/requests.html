@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="requests.css">
+    <title>Requêtes HTTP</title>
+</head>
+<body>
+    <h1>Monitoring des accès web à la plateforme</h1>
+
+    <!-- Formulaire de filtrage par URL -->
+    <form id="filtre-url">
+        <div class="form-group">
+            <label for="url-input">Filtrer par URL :</label>
+            <input type="text" id="url-input" name="url-input">
+        </div>
+        <div class="form-group">
+            <button type="submit">Filtrer</button>
+        </div>
+    </form>
+
+    <!-- Formulaire de filtrage par date -->
+    <form id="filtre-date">
+        <div class="form-group">
+            <label for="date-input">Filtrer par date :</label>
+            <input type="date" id="date-input" name="date-input">
+        </div>
+        <div class="form-group">
+            <button type="submit">Filtrer</button>
+        </div>
+    </form>
+
+    <ul id="liste-requetes"></ul>
+
+    <script src="requests.js"></script>
+</body>
+</html>
