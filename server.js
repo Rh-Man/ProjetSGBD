@@ -7,7 +7,7 @@
     // Middleware pour stocker les requêtes
     const requests = [];
 
-    app.use((req, res, next) => {
+    app.use(( req, res, next) => {
     const requestData = {
         method: req.method,
         url: req.url,
