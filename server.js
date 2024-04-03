@@ -19,7 +19,7 @@
     next();
     });
 
-    // Middleware pour servir les fichiers statiques
+    // Middleware pour servir les _ fichiers statiques
     app.use(express.static(path.join(__dirname, 'public')));
 
     // Route pour la page d'accueil
